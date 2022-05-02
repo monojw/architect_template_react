@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/architect_template_react/static/js/main.ce2c6dec.js",
+    "index.html": "/architect_template_react/index.html",
+    "main.ce2c6dec.js.map": "/architect_template_react/static/js/main.ce2c6dec.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ce2c6dec.js"
+  ]
+}
