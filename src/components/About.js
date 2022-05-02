@@ -69,7 +69,7 @@ const About = ({ about }) => {
           return (
             <AboutContent
               key={i}
-              img={`process.env.PUBLIC_URL/${v.img}`}
+              img={process.env.PUBLIC_URL + v.img}
               name={v.name}
               position={v.position}
               desc={v.desc}

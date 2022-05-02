@@ -27,7 +27,7 @@ const ProjectContentContainer = styled.div`
 const ProjectContent = ({ img, subject }) => {
   return (
     <div className="projectCard">
-      <img src={img} alt={subject} />
+      <img src={process.env.PUBLIC_URL + img} alt={subject} />
       <div className="cardTitle">{subject}</div>
     </div>
   );
