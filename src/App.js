@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * @filename: App.js
+ * @description: 컴포넌트 정의
+ * @author: JEON WOO YEOL
+ */
 
-function App() {
+import React from 'react';
+import styled from 'styled-components';
+import { Route, Routes } from 'react-router-dom';
+
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+
+import Contents from './pages/Contents';
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1564px;
+  margin: 0 auto;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* NAVBAR */}
+      <Navbar />
+
+      {/* HEADER */}
+      <Header />
+
+      <AppContainer>
+        <Routes>
+          {/* CONTENTS */}
+          <Route path="/" export={true} element={<Contents />} />
+        </Routes>
+      </AppContainer>
+
+      {/* FOOTER */}
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
