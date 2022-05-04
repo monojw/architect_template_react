@@ -7,7 +7,7 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,6 +34,15 @@ const NavbarContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .headerNav {
+      display: none;
+    }
+  }
 `;
 
 const Navbar = () => {
@@ -41,9 +50,9 @@ const Navbar = () => {
     <NavbarContainer>
       {/* logo */}
       <div className="headerLogo">
-        <NavLink to="/">
+        <Link to="header">
           <b>BR</b> Architects
-        </NavLink>
+        </Link>
       </div>
 
       {/* nav */}

@@ -19,29 +19,25 @@ const AppContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1564px;
-  margin: 0 auto;
 `;
 
 const App = () => {
   return (
-    <>
+    <AppContainer>
       {/* NAVBAR */}
       <Navbar />
 
       {/* HEADER */}
       <Header />
 
-      <AppContainer>
-        <Routes>
-          {/* CONTENTS */}
-          <Route path="/" export={true} element={<Contents />} />
-        </Routes>
-      </AppContainer>
+      <Routes>
+        {/* CONTENTS */}
+        <Route path="/" export={true} element={<Contents />} />
+      </Routes>
 
       {/* FOOTER */}
       <Footer />
-    </>
+    </AppContainer>
   );
 };
 

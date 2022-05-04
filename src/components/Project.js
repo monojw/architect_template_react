@@ -22,6 +22,14 @@ const ProjectContentContainer = styled.div`
       color: #fff;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .projectCard {
+      width: 100%;
+    }
+  }
 `;
 
 const ProjectContent = ({ img, subject }) => {

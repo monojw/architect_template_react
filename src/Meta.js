@@ -28,9 +28,9 @@ const Meta = (props) => {
 };
 
 Meta.defaultProps = {
-  title: 'w3 css templates architect (React)',
-  description: 'w3 css templates architect. (React) 예제입니다.',
-  keywords: 'React',
+  title: 'Architect Template Clone (React)',
+  description: 'React.js로 구현한 W3School 클론코딩 페이지 입니다.',
+  keywords: 'React,layout,demo,responsive,web',
   author: 'JEON WOO YEOL',
   url: window.location.href,
 };

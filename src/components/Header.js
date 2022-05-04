@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  width: 1500px;
+  max-width: 1500px;
   margin: 0 auto;
   position: relative;
 
@@ -24,11 +24,17 @@ const HeaderContainer = styled.header`
       opacity: 0.75;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .mainTitle span:last-child {
+      display: none;
+    }
+  }
 `;
 
 const Header = () => {
   return (
-    <HeaderContainer>
+    <HeaderContainer id="header">
       {/* header image */}
       <img src="https://www.w3schools.com/w3images/architect.jpg" alt="main" />
 

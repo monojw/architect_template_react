@@ -8,7 +8,7 @@ import Projects from '../components/Project';
 import data from '../data/data';
 
 const ContentsContainer = styled.div`
-  width: 100%;
+  max-width: 1564px;
   padding: 8px 16px;
 
   .titleArea {

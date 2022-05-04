@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
+  width: 100%;
   background-color: #000;
   color: #fff;
   padding: 16px 0;

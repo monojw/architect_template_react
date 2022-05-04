@@ -39,6 +39,14 @@ const AboutContentContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .aboutCard {
+      width: 100%;
+    }
+  }
 `;
 
 const AboutContent = ({ img, name, position, desc }) => {

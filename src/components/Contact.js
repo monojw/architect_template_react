@@ -30,8 +30,7 @@ const ContactContainer = styled.div`
   }
 
   .imgArea {
-    width: 1500px;
-    margin: 0 auto;
+    padding: 0 10px;
   }
 `;
 
